@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-dars</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="bg-slate-400">
+
+    <form autocomplete="off" class="todo-form bg-white p-5 rounded-md w-[500px] mx-auto mt-5">
+        <input class="todo-input w-[80%] focus:border-blue-500 p-2 rounded-md outline-none border-[2px] border-slate-400" type="text" placeholder="Create" name="todo" required>
+        <button class="text-center bg-green-500 text-white font-semibold p-[9.5px] rounded-md" type="submit">Create</button>
+    </form>
+    <ul class="todo-list bg-white p-5 rounded-md w-[500px] mx-auto mt-5"></ul>
+    
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+     </script>
+</body>
+</html>
